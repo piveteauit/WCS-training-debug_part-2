@@ -1,36 +1,24 @@
-import Counter from "@components/Counter";
-import logo from "@assets/logo.svg";
+import Cupcake from "@components/Cupcake";
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <>
+      <h1>Cupcake Chooser</h1>
+      <section className="home">
+        <div className="home-cupcake">
+          <Cupcake />
+        </div>
+        <div>
+          <p>
+            Welcome to the Cupcake Chooser ! 🧁
+            <br />
+            On this application, you are able to create your own uniques
+            Cupcakes !
+          </p>
+          ✔️ List your cupcakes <br />
+          ✔️ And filter them by accessory !
+        </div>
+      </section>
+    </>
   );
 }
