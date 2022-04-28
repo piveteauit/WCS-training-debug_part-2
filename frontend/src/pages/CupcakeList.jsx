@@ -1,6 +1,6 @@
 import Cupcake from "@components/Cupcake";
 
-export default function Home() {
+export default function CupcakeList() {
   // Step 1: get all cupcakes
 
   // Step 3: get all accessories
