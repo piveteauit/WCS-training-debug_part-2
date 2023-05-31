@@ -6,7 +6,7 @@
 2. Create a branch with your name and switch on it.
 3. Run `npm run setup`.
 4. Run `npm run dev`.
-5. Go to `localhost:3000` with your favorite browser.
+5. Go to `localhost:4001` with your favorite browser.
 
 
 ## Step 2 - Debug the project
