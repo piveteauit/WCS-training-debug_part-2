@@ -1,8 +1,17 @@
 import Cupcake from "@components/Cupcake";
+import { useEffect, useState } from "react";
 
 export default function CupcakeList() {
+  const [cupcakes, setCupcakes] = useState([]);
   // Step 1: get all cupcakes
 
+  useEffect(() => {
+    fetch("http://localhost:4000/cupcakes").then(async (result) =>
+      setCupcakes(await result.json())
+    );
+  }, []);
+
+  console.warn(cupcakes);
   // Step 3: get all accessories
 
   return (
