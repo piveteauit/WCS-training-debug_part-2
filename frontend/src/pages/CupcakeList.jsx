@@ -22,10 +22,7 @@ export default function CupcakeList() {
       <form className="center">
         <label htmlFor="cupcake-select">
           Filter by{" "}
-          <select
-            id="cupcake-select"
-            onChange={(e) => setFilterAccessory(e.target.value)}
-          >
+          <select id="cupcake-select" onChange={setFilterAccessory}>
             <option value="">---</option>
             {accessories.map((accessory) => (
               <option key={`accessory_${accessory.id}`} value={accessory.id}>
