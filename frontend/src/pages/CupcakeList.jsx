@@ -2,7 +2,7 @@ import Cupcake from "@components/Cupcake";
 import { useEffect, useState } from "react";
 
 export default function CupcakeList() {
-  const [cupcakes, setCupcakes] = useState([]);
+  const [cupcakes, setCupcakes] = useState();
   const [accessories, setAccessories] = useState([]);
   const [filterAccessory, setFilterAccessory] = useState("");
   // Step 1: get all cupcakes
