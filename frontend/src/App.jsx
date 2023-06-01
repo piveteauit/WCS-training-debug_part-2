@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import NavBar from "@components/NavBar";
-import Home from "@pages/Home";
-import CupcakeList from "@pages/CupcakeList";
-import CupcakeDetails from "@pages/CupcakeDetails";
-import Instructions from "@pages/Instructions";
-
 import "./App.css";
+
+import Home from "@pages/Home";
+import NotFound from "@pages/NotFound";
+import Profil from "@pages/Profil";
+
+import { NavBar } from "@components";
 
 function App() {
   return (
@@ -13,9 +13,10 @@ function App() {
       <main className="main-container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cupcakes" element={<CupcakeList />} />
-          <Route path="/cupcakes/:cupcakeId" element={<CupcakeDetails />} />
-          <Route path="/instructions" element={<Instructions />} />
+
+          <Route path="/profil" element={<Profil />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <NavBar />

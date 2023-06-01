@@ -7,11 +7,8 @@ export default function NavBar() {
         <NavLink className="primary-btn btn" to="/">
           Home
         </NavLink>
-        <NavLink className="primary-btn btn" to="/cupcakes">
+        <NavLink className="primary-btn btn" to="/profil">
           🧁 My cupcakes
-        </NavLink>
-        <NavLink className="secondary-btn btn" to="/instructions">
-          Instructions
         </NavLink>
       </div>
     </nav>

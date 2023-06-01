@@ -1,15 +1,14 @@
 @import "./cupcake.css";
 
 :root {
-  --default-cream-color: #ffe868;
-  --background-color: #fac564;
+  --background-color: #222;
   --main-color: #de467c;
   --secondary-color: #9d9cdf;
   --light: #fffef7;
-  --dark: #2a2929;
+  --dark: #222;
   --shadow: #8d8b86;
   --light-shadow: rgba(255, 255, 255, 0.3);
-  --cupcake-basis-color: #ffd180;
+  --cupcake-basis-color: #222;
 
   --text-font: "Cantarell", sans-serif;
   --title-font: "Amatic SC", sans-serif;
@@ -42,6 +41,7 @@ h1 {
 }
 
 .main-container {
+  /*
   width: var(--container-width);
   background-color: var(--light);
   padding: calc(var(--spacing-lg) * 2);
@@ -49,25 +49,18 @@ h1 {
   border-radius: 4px;
   box-shadow: 4px 4px 4px var(--shadow);
   min-height: 40vh;
+  */
 }
 
 .home {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .home-cupcake {
   display: flex;
   position: relative;
-}
-
-.home-cupcake::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  animation: rotating 14s infinite linear;
-  background-image: url("./assets/starburst.png");
 }
 
 @-webkit-keyframes rotating {
